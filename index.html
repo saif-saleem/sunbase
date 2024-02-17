@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="title"> <span style="font-size: 25px;"> Form Builder </span></div>
+            <div>
+            
+                <i class="fa-solid fa-cloud-arrow-down" id="save-btn">save</i>
+        </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-title">Components</div>
+            <div class="sidebar-content">
+                <button class="sidebar-btn" id="add-input"><span>Input</span><span><i class="fa-solid fa-plus"></i></span></button>
+                <button class="sidebar-btn" id="add-select"><span>Select</span><span><i class="fa-solid fa-plus"></i></span></button>
+                <button class="sidebar-btn" id="add-textarea"><span>Textarea</span><span><i class="fa-solid fa-plus"></i></span></button>
+            </div>
+        </div>
+        <div class="form-container">
+            
+            <div class="form">
+                <div style="height: 49vw; overflow-y: auto; scrollbar-width: thin; scrollbar-color: transparent transparent; -webkit-scrollbar-width: thin;">
+                <ul id="form-items">
+                    <li>
+                        <div class="form-item">
+                            <div class="form-item-label-container">
+                                <label class="form-item-label">Sample label</label>
+                                <button class="form-item-del" ><i class="fa-solid fa-trash" ></i></button>
+                            </div>
+                            <input class="form-item-element">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-item">
+                            <div class="form-item-label-container">
+                                <label class="form-item-label">Select</label>
+                                <button class="form-item-del" ><i class="fa-solid fa-trash" ></i></button>
+                            </div>
+                            <select class="form-item-element">
+                                <option>Sample Option 1</option>
+                                <option>Sample Option 2</option>
+                                <option>Sample Option 3</option>
+                                <option>Sample Option 4</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-item">
+                            <div class="form-item-label-container">
+                                <label class="form-item-label">Text area</label>
+                                <button class="form-item-del" ><i class="fa-solid fa-trash" ></i></button>
+                            </div>
+                            <textarea class="form-item-element form-item-element-text" ></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
